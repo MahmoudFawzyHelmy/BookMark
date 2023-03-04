@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Product</title>
+
+</head>
+
+<body><!--form  -->
+    <div class="container my-5">
+        <label for="bookMarkName">BookMark Name:</label>
+        <input type="text" class="form-control my-3" id="bookMarkName" />
+        <label for="bookMarkUrl">BookMark Url:</label>
+        <input type="url" class="form-control my-3" id="bookMarkUrl" />
+        <button class="btn btn-info" id="mainBtn">
+            Add BookMark
+        </button>
+
+        <input type="text" placeholder="search" class="form-control my-5" onkeyup="search(this.value)" />
+        <table class="mt-5 table">
+            <thead>
+                <th>Index</th>
+                <th>BookMark Name</th>
+                <th>BookMark Url</th>
+                <th>Delete</th>
+                <th>Update</th>
+
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
